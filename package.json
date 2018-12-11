@@ -1,0 +1,29 @@
+{
+  "name": "developerconnector.com",
+  "version": "1.0.0",
+  "description": "Social network for developers",
+  "main": "server",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix ./client",
+    "app": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Ahmed Elsharkawy",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.7",
+    "nodemon": "^1.18.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-thunk": "^2.3.0",
+    "validator": "^10.8.0"
+  }
+}
